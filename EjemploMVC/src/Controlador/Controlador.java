@@ -18,6 +18,31 @@ public class Controlador {
 	}
 	
 	private void InitializeEvents() {
+		//panel eleccion y va a lineas
+		vista.eleccion.btnlineas.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				vista.mostrarPanel(vista.lineas);
+			}
+		});
+		//panel lineas y va a eleccion
+		vista.lineas.btnLineaBilbaoMuskiz.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//click boton de bienvenida
+				//Ocultar bienvenida
+				//Mostrar productos
+				vista.mostrarPanel(vista.eleccion);
+			}
+		});
+		
+		vista.lineas.btnLineaBibaoBalmaseda.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//click boton de bienvenida
+				//Ocultar bienvenida
+				//Mostrar productos
+				vista.mostrarPanel(vista.eleccion);
+				
+			}
+		});
 
 		vista.panelPresentacion.btnPresentacionTermibus.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent arg0) {
@@ -43,7 +68,7 @@ public class Controlador {
 				if (existeusuario == false){
 					vista.panelLogin.lblPanelError.setText("ERROR!!!!!!");
 				}else {
-					vista.mostrarPanel(vista.panelPresentacion);
+					vista.mostrarPanel(vista.eleccion);
 				}
 				
 				

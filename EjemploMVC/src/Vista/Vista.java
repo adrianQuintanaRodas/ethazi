@@ -7,6 +7,8 @@ public class Vista {
 	public Ventana ventana = new Ventana();
 	public PanelLogin panelLogin = new PanelLogin();
 	public PanelPresentacion panelPresentacion = new PanelPresentacion();
+	public Eleccion eleccion = new Eleccion();
+	public Lineas lineas = new Lineas();
 	
 	public Vista() {
 		mostrarPanel(panelPresentacion);
