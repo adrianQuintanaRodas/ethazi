@@ -25,7 +25,7 @@ public class Controlador {
 			}
 		});
 		//panel lineas y va a eleccion
-		vista.lineas.btnLineaBilbaoMuskiz.addActionListener(new ActionListener() {
+		vista.lineas.btnLineaBibaoBalmaseda.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				//click boton de bienvenida
 				//Ocultar bienvenida
@@ -34,7 +34,25 @@ public class Controlador {
 			}
 		});
 		
-		vista.lineas.btnLineaBibaoBalmaseda.addActionListener(new ActionListener() {
+		vista.lineas.btnLineaBilbaoplentzia.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//click boton de bienvenida
+				//Ocultar bienvenida
+				//Mostrar productos
+				vista.mostrarPanel(vista.eleccion);
+				
+			}
+		});
+		vista.lineas.btnLineaBilbaodurango.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//click boton de bienvenida
+				//Ocultar bienvenida
+				//Mostrar productos
+				vista.mostrarPanel(vista.eleccion);
+				
+			}
+		});
+		vista.lineas.btnLineaBilbaoMuskiz.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				//click boton de bienvenida
 				//Ocultar bienvenida

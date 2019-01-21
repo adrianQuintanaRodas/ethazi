@@ -17,7 +17,11 @@ import javax.swing.JRadioButton;
 public class Eleccion extends JPanel {
 
 	public JButton btnlineas;
+	public JButton btnComprar;
 	public JComboBox comboBox = new JComboBox();
+	public JComboBox comboBox_1 = new JComboBox();
+	public JRadioButton rdbtnIda;
+	public JRadioButton rdbtnIdaYVuelta;
 	/**
 	 * Create the panel.
 	 */
@@ -32,17 +36,17 @@ public class Eleccion extends JPanel {
 		comboBox.setBounds(46, 87, 70, 20);
 		add(comboBox);
 		
-		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1 = new JComboBox();
 		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Destino"}));
 		comboBox_1.setBounds(46, 165, 70, 20);
 		add(comboBox_1);
 		
-		JRadioButton rdbtnIda = new JRadioButton("IDA");
+		rdbtnIda = new JRadioButton("IDA");
 		rdbtnIda.setSelected(true);
 		rdbtnIda.setBounds(46, 211, 109, 23);
 		add(rdbtnIda);
 		
-		JRadioButton rdbtnIdaYVuelta = new JRadioButton("IDA Y VUELTA");
+		rdbtnIdaYVuelta = new JRadioButton("IDA Y VUELTA");
 		rdbtnIdaYVuelta.setBounds(46, 249, 109, 23);
 		add(rdbtnIdaYVuelta);
 
@@ -50,6 +54,10 @@ public class Eleccion extends JPanel {
 		btnlineas = new JButton("LINEAS");
 		btnlineas.setBounds(157, 32, 89, 23);
 		add(btnlineas);
+		
+		btnComprar = new JButton("COMPRAR");
+		btnComprar.setBounds(221, 130, 89, 23);
+		add(btnComprar);
 		
 		
 		
